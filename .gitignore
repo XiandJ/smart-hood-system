@@ -1,0 +1,51 @@
+# Build outputs
+build/
+*.o
+*.d
+*.elf
+*.hex
+*.bin
+*.map
+*.out
+*.a
+*.la
+*.lai
+*.so
+*.dll
+*.dylib
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.bak
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+
+# STM32Cube
+STM32CubeMX/
+Drivers/CMSIS/
+Drivers/STM32H5xx_HAL_Driver/
+*.ioc
+
+# Models
+*.h5
+*.tflite
+openmv/models/
+
+# Secrets / Local
+.local/
+*.local
