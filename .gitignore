@@ -46,6 +46,13 @@ Drivers/STM32H5xx_HAL_Driver/
 *.tflite
 openmv/models/
 
+# PlatformIO
+.pio/
+
+# Logs
+logs/
+*.csv
+
 # Secrets / Local
 .local/
 *.local

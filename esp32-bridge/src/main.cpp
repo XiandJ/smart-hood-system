@@ -15,6 +15,7 @@
 #include "wifi_manager.h"
 #include "uart_sensor.h"
 #include "uart_camera.h"
+#include "frame_buffer.h"
 #include "web_server.h"
 
 // ==================== FreeRTOS 任务句柄 ====================
@@ -89,7 +90,7 @@ void setup() {
     uart_camera_begin();
 
     // 初始化 WiFi (先尝试 STA, 失败自动切换 AP)
-    g_wifiManager.begin(WIFI_MODE_STA);
+    g_wifiManager.begin(NET_STA);
 
     // 启动 WebSocket + HTTP
     web_server_begin();

@@ -24,7 +24,7 @@
 #define FRAME_HEADER_1  0xAA
 #define FRAME_HEADER_2  0x55
 #define FRAME_MAX_LEN   2048
-#define FRAME_CAM_MAX   16384   // 图像帧最大 16KB
+#define FRAME_CAM_MAX   8192    // 图像帧最大 8KB (QVGA JPEG ~5-8KB)
 
 // ==================== WebSocket ====================
 #define WS_PORT         81
@@ -33,7 +33,7 @@
 // ==================== 任务栈大小 ====================
 #define STACK_SENSOR    4096
 #define STACK_CAMERA    8192
-#define STACK_NETWORK   8192
+#define STACK_NETWORK   16384
 #define STACK_WEB       4096
 
 // ==================== 优先级 ====================
