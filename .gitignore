@@ -1,58 +1,43 @@
 # Build outputs
-build/
 *.o
 *.d
-*.elf
+*.axf
 *.hex
 *.bin
+*.elf
 *.map
-*.out
-*.a
-*.la
-*.lai
-*.so
-*.dll
-*.dylib
+*.lst
+*.lss
+*.sym
+Listings/
+Objects/
+Debug/
+Release/
 
-# IDE
+# IDE - Keil MDK
+*.uvguix.*
+*.bak
+*.dep
+RTE/
+uvoptx
+
+# IDE - STM32CubeIDE
+.settings/
+.cproject
+.project
+Debug/
+Release/
+
+# IDE - Other
 .vscode/
-.idea/
 *.swp
 *.swo
 *~
+
+# OS
 .DS_Store
 Thumbs.db
-*.bak
+desktop.ini
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-*.egg-info/
-dist/
-
-# STM32Cube
-STM32CubeMX/
-Drivers/CMSIS/
-Drivers/STM32H5xx_HAL_Driver/
-*.ioc
-
-# Models
-*.h5
-*.tflite
-openmv/models/
-
-# PlatformIO
-.pio/
-
-# Logs
-logs/
-*.csv
-
-# Secrets / Local
-.local/
-*.local
+# CubeMX backup
+project/*_backup/
